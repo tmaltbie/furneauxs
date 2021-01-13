@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,italic,700,700italic');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@700&display=swap');
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #47353A;
+}
+
+header {
+    display: flex;
+    position: sticky; top: 0px;
+    justify-content: space-between;
+    padding: 0px 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* header h1 {
+    float: left;
+} */
+
+header nav {
+    /* float: right; */
+    margin-top: 3px;
+    padding-top: 20px;
+}
+
+header nav a {
+    padding-right: 1em;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero img {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero {
+    background-image: url("assets/hero.jpg");
+    background-size: cover;
+    padding-top: 230px;
+    padding-bottom: 200px;
+
+	background-position: right center;
+}
+
+.hero div {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: David Libre;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flowers {
+   overflow: hidden;
+}
+
+.flowers img {
+    float: left;
+    max-width: 33.33%
+}
+
+.quotes {
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.quotes div {
+    padding: 20px;
+    text-align: center;
+}
+
+.quote {
+    flex: 1;
+}
+
+.cream-background {
+    background-color: #f7f1ee;
+}
+
+.quotes img {
+    border-radius: 50%;
+    width: 75px;
+}
+
+.chair {
+    background-image: url("assets/full-bleed.jpg");
+    background-position: center bottom;
+    padding: 0;
+    height: 500px;
+}
+
+.logos {
+    background-color: #eeae9f;
+    padding: 20px 20px 35px 20px;
+    text-align: center;
+}
+
+.logos p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.logos img {
+    margin: 0 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #47353A;
+    padding: 20px 20px;
+}
+
+footer p {
+    font-size: 12px;
+    padding-top: 12px;
+    color: #ccc9ca;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: block;
+        padding: 0px 30px;
+        margin-bottom: 12px;
+    }
+
+    header nav {
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+
+    .hero {
+        background-position: top;
+    }
+
+    .hero div {
+        padding: 0 30px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .flowers img {
+        max-width: 100%;
+    }
+
+    .quotes {
+        display: block;
+    }
+
+    .quote blockquote {
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .quote p {
+        display: none;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logos p {
+        padding-bottom: 16px;
+    }
+
+    .logos img {
+        padding-bottom: 32px;
+    }
+}
